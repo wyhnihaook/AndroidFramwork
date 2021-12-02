@@ -24,3 +24,6 @@ UI额外组件库：lib_widget：所有额外需要依赖的ui组件库（自定
 
 用户业务模块：module_user
 
+
+
+***************如果要使每个组件独立允许，配置gradle.properties文件中的isBuildModule属性，需要注意，单独运行中执行的是alone文件下的AndroidManifest***************
