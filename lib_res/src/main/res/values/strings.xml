@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_real_name">app真实名称</string>
+
+    <string name="app_name_host">app宿主</string>
+
+    <string name="app_name_main">app首页</string>
+
+    <string name="app_name_sessions">app场次</string>
+
+    <string name="app_name_schedule">app赛程</string>
+
+    <string name="app_name_music">app音乐</string>
+
+    <string name="app_name_user">app我的</string>
+
+    <string name="app_name_login">app登录模块</string>
+
+</resources>

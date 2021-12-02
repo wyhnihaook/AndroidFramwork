@@ -1,0 +1,25 @@
+apply from: "../module.build.gradle"
+android {
+    defaultConfig {
+        //如果是独立模块，则使用当前组件的包名
+        if (isBuildModule.toBoolean()) {
+            applicationId "com.lib.main"
+        }
+    }
+    //统一资源前缀，规范资源引用
+    resourcePrefix "main_"
+}
+
+dependencies {
+
+    implementation project(path: ':mvvmhabit')
+    implementation project(path: ':lib_res')
+    implementation project(path: ':lib_net')
+    implementation project(path: ':lib_widget')
+
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+
+    //第三方底部Tabbar(这里要用api依赖, 不能用implementation，不然当宿主打包的时候自动生成的databinding无法编译该库的类
+    api 'me.majiajie:pager-bottom-tab-strip:2.2.2'
+
+}

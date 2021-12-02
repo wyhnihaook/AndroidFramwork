@@ -1,0 +1,72 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            manifestPlaceholders.put("appName", rootProject.ext.appName)
+
+            manifestPlaceholders.put("config", "@xml/network_security_config2")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            //内嵌网络配置   生产环境   代码
+            buildConfigField 'boolean', 'RNDEBUG', 'false'
+            buildConfigField 'boolean', 'ISDEBUG', 'false'
+            buildConfigField 'String', 'API_HOST', rootProject.ext.API_PRO_HOST
+            buildConfigField 'String', 'H5_HOST', rootProject.ext.H5_PRO_HOST
+            buildConfigField 'String', 'EXTRA_H5_HOST', rootProject.ext.H5_EXTRA_PRO_HOST
+            buildConfigField 'String', 'EXAM_H5_HOST', rootProject.ext.H5_EXAM_PRO_HOST
+            buildConfigField 'String', 'WEBSOCKET_URL', rootProject.ext.WEBSOCKET_PRO_URL
+            buildConfigField 'String', 'WEBSOCKET_MEETING_URL', rootProject.ext.WEBSOCKET_PRO_MEETING_URL
+            buildConfigField 'String', 'H5_SHARE_URL', rootProject.ext.APP_PRO_SHARE_HOST
+            buildConfigField 'String', 'DOWNLOAD_AREA_JSON_URL', rootProject.ext.DOWNLOAD_AREA_JSON_URL
+            buildConfigField 'String', 'DOWNLOAD_APK_PATCH_URL', rootProject.ext.DOWNLOAD_APK_PATCH_URL
+            buildConfigField 'String', 'DOWNLOAD_APK_SPLASH_URL', rootProject.ext.DOWNLOAD_APK_SPLASH_URL
+        }
+
+        debug {
+            debuggable true
+            manifestPlaceholders.put("appName",  rootProject.ext.appName)
+
+            manifestPlaceholders.put("id", "")
+            manifestPlaceholders.put("config", "@xml/network_security_config")
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //内嵌网络配置   测试环境  代码
+            buildConfigField 'boolean', 'RNDEBUG', 'true'
+            buildConfigField 'boolean', 'ISDEBUG', 'true'
+            buildConfigField 'String', 'API_HOST', rootProject.ext.API_DEV_HOST
+            buildConfigField 'String', 'H5_HOST', rootProject.ext.H5_DEV_HOST
+            buildConfigField 'String', 'EXTRA_H5_HOST', rootProject.ext.H5_EXTRA_DEV_HOST
+            buildConfigField 'String', 'EXAM_H5_HOST', rootProject.ext.H5_EXAM_DEV_HOST
+            buildConfigField 'String', 'WEBSOCKET_URL', rootProject.ext.WEBSOCKET_DEV_URL
+            buildConfigField 'String', 'WEBSOCKET_MEETING_URL', rootProject.ext.WEBSOCKET_DEV_MEETING_URL
+            buildConfigField 'String', 'H5_SHARE_URL', rootProject.ext.APP_DEV_SHARE_HOST
+            buildConfigField 'String', 'DOWNLOAD_AREA_JSON_URL', rootProject.ext.DOWNLOAD_AREA_JSON_URL
+            buildConfigField 'String', 'DOWNLOAD_APK_PATCH_URL', rootProject.ext.DOWNLOAD_APK_PATCH_URL
+            buildConfigField 'String', 'DOWNLOAD_APK_SPLASH_URL', rootProject.ext.DOWNLOAD_APK_SPLASH_TEST_URL
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation project(path: ':mvvmhabit')
+
+}

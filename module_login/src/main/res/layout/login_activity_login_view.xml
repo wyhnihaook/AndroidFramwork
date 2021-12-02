@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.lib.login.viewmodel.LoginViewModel" />
+
+        <import type="com.lib.login.R" />
+
+        <import type="android.text.TextUtils"/>
+
+        <variable
+            name="loginModel"
+            type="LoginViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:binding="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#161718"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="110dp"
+                    android:text="欢迎使用i舞检票"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="9dp"
+                    android:src="@mipmap/login_ic_welcome_des_logo"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginRight="30dp">
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="15dp"
+                        android:layout_height="18dp"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:src="@mipmap/login_ic_phone"/>
+                    <EditText
+                        android:id="@+id/edit_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:hint="请输入手机号"
+                        android:textColorHint="#585858"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:background="@null"
+                        android:layout_toRightOf="@+id/iv"
+                        android:layout_marginLeft="20dp"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#1AFFFFFF"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@{TextUtils.isEmpty(loginModel.userPhone)?@drawable/shape_login_with_out_number_btn:@drawable/shape_login_btn}"
+                    android:text="获取验证码"
+                    binding:onClickCommand="@{loginModel.login}"
+                    android:textColor="@{TextUtils.isEmpty(loginModel.userPhone)?@color/colorTextTransportColor:@color/colorTextColor}"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

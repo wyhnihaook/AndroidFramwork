@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- RewardAnim -->
+    <declare-styleable name="RewardLayout">
+        <attr name="max_gift" format="integer" />
+        <attr name="gift_item_layout" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TimelyView">
+        <attr name="time_text_color" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalGridView">
+        <!--指示器背景-->
+        <attr name="indicatorBackground" format="reference" />
+        <!--指示器颜色 只有 "未设置indicatorBackground" 或 "设置了indicatorBackground但SDK低于24" 时才生效-->
+        <attr name="indicatorBackgroundColor" format="color" />
+        <!--TabLayout宽度-->
+        <attr name="tabLayoutWidth" format="dimension" />
+        <!--TabLayout高度-->
+        <attr name="tabLayoutHeight" format="dimension" />
+        <!--TabLayout背景-->
+        <attr name="tabBackground" format="reference" />
+        <!--TabLayout和ViewPager的间隔-->
+        <attr name="tabLayoutInterval" format="dimension" />
+        <!--ViewPager每页展示总数量-->
+        <attr name="pageDisplaysCount" format="integer" />
+        <!--ViewPager每行展示数目-->
+        <attr name="pageSpanCount" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TriangleView">
+        <!--模式-->
+        <attr name="tlv_mode">
+            <!--倒三角-->
+            <enum name="inverted" value="0" />
+            <!--正三角-->
+            <enum name="regular" value="1" />
+        </attr>
+
+        <!--        是否中间填充-->
+        <attr name="tlv_fill" format="boolean" />
+<!--        是否在最后完整绘制，不缺省一横-->
+        <attr name="tlv_complete" format="boolean" />
+        <!--颜色-->
+        <attr name="tlv_color" format="color|reference" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="leftViewId" format="reference|integer"/>
+        <attr name="rightViewId" format="reference|integer"/>
+        <attr name="contentViewId" format="reference|integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="image_type" format="enum">
+            <enum name="circle_type" value="1" />
+            <enum name="round_type" value="2" />
+        </attr>
+        <attr name="radius_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ShadowView">
+        <!--        正序标识底部渐变到顶部透明，倒序则相反-->
+        <attr name="asc" format="boolean" />
+
+        <attr name="startColor" format="integer" />
+
+        <attr name="middleColor" format="integer" />
+
+        <attr name="endColor" format="integer" />
+    </declare-styleable>
+
+</resources>

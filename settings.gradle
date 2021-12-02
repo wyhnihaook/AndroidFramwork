@@ -1,0 +1,12 @@
+include ':module_music'
+include ':module_user'
+include ':module_schedule'
+include ':module_sessions'
+include ':module_main'
+include ':module_login'
+include ':lib_res'
+include ':lib_widget'
+include ':lib_net'
+include ':mvvmhabit'
+include ':app'
+rootProject.name = "Framework"

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="color_101011">#101012</color>
+
+    <array name="in_colors_light">
+        <item>#4B03A9F4</item>
+        <item>#3303A9F4</item>
+        <item>#1903A9F4</item>
+    </array>
+
+    <color name="module_public_colorPrimary">#3F51B5</color>
+    <color name="module_public_colorPrimaryDark">#303F9F</color>
+    <color name="module_public_colorAccent">#FF4081</color>
+
+    <color name="module_public_ffffff">#ffffff</color>
+    <color name="module_public_bcbcbc">#bcbcbc</color>
+    <color name="module_public_eeeeee">#eeeeee</color>
+    <color name="module_public_999999">#999999</color>
+
+
+
+    <integer-array name="module_public_gplus_colors">
+        <item>@color/module_public_gplus_color_1</item>
+        <item>@color/module_public_gplus_color_2</item>
+        <item>@color/module_public_gplus_color_3</item>
+        <item>@color/module_public_gplus_color_4</item>
+    </integer-array>
+    <color name="module_public_gplus_color_1">#3e802f</color>
+    <color name="module_public_gplus_color_2">#f4b400</color>
+    <color name="module_public_gplus_color_3">#427fed</color>
+    <color name="module_public_gplus_color_4">#b23424</color>
+</resources>

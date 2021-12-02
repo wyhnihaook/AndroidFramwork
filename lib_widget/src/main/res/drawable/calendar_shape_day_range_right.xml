@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 主体背景颜色值 -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#E0FB10"
+                android:endColor="#94A12C"
+                android:type="linear"
+                android:angle="360"
+                android:centerX="0.5"
+                android:centerY="0.5" />
+            <!-- 圆角 -->
+            <corners
+                android:bottomLeftRadius="0dp"
+                android:bottomRightRadius="6dp"
+                android:topLeftRadius="0dp"
+                android:topRightRadius="6dp" />
+        </shape>
+    </item>
+</layer-list>
+
+

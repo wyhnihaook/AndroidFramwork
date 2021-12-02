@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2017 Yan Zhenjie
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+
+    <color name="x_recycler_color_text_gray">#FF777777</color>
+
+    <color name="x_recycler_color_loading_color1">#55777777</color>
+    <color name="x_recycler_color_loading_color2">#B1777777</color>
+    <color name="x_recycler_color_loading_color3">#FF777777</color>
+
+    <!--calendar module-->
+    <color name="calendar_background_color">#FFFFFF</color>
+    <color name="calendar_background_week_color">#FFFFFF</color>
+    <color name="calendar_background_decoration_color">#FFFFFF</color>
+    <color name="calendar_background_decoration_color2">#1D1E1F</color>
+    <color name="calendar_text_decoration_color">#333333</color>
+
+    <!--month module-->
+    <color name="calendar_month_divide_line_color">#FFFFFF</color>
+    <color name="calendar_month_divide_line_color2">#161718</color>
+    <color name="calendar_month_background_color">#FFFFFF</color>
+    <color name="calendar_month_background_color2">#161718</color>
+    <!--day module-->
+    <color name="calendar_day_text_normal_color">#FFFFFF</color>
+    <color name="calendar_day_text_invalid_color">#585858</color>
+    <color name="calendar_day_text_select_color">#FFFFFF</color>
+    <color name="calendar_day_text_range_color">#202124</color>
+    <color name="calendar_day_text_stress_color">#FA843F</color>
+
+    <color name="calendar_day_background_normal_color">#161718</color>
+    <color name="calendar_day_background_invalid_color">#161718</color>
+    <color name="calendar_day_background_range_color">#EEE75051</color>
+    <color name="calendar_day_background_bound_color">#FFE75051</color>
+    <color name="calendar_day_background_range_color2">#1AE0FA10</color>
+
+
+    <color name="transport">#00000000</color>
+</resources>

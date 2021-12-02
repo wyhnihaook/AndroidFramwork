@@ -1,0 +1,107 @@
+ext {
+    //网络配置项
+
+    //开发环境
+    API_DEV_HOST="\"http://test.api.idance.vip\""
+
+    WEBSOCKET_DEV_URL="\"ws://test.ws.idance.vip:10000/liveRoomConnection.ws?\""
+
+    WEBSOCKET_DEV_MEETING_URL="\"ws://test.ws.idance.vip:10000/meetingRoomConnection.ws?\""
+
+    H5_DEV_HOST="\"http://test.h5.idance.vip\""
+
+    H5_EXTRA_DEV_HOST="\"http://test.assessor.idance.vip\""
+
+    H5_EXAM_DEV_HOST="\"http://test.exam.idance.vip/\""//考牌和入会专属
+
+    APP_DEV_SHARE_HOST="\"https://test.app.idance.vip\""
+
+    //upyun 账号密码
+    API_TEST_UPYUN_USER="\"wangxing\""
+
+    API_TEST_UPYUN_PASSWORD="\"Ovam8TgtNDYT4PI4guf81OBpotypGON4\""
+
+    //生产环境
+    API_PRO_HOST="\"http://stage.api.idance.vip\""
+
+    WEBSOCKET_PRO_URL="\"ws://stage.ws.idance.vip:10000/liveRoomConnection.ws?\""
+
+    WEBSOCKET_PRO_MEETING_URL="\"ws://stage.ws.idance.vip:10000/meetingRoomConnection.ws?\""
+
+    H5_PRO_HOST="\"http://stage.h5.idance.vip\""
+
+    H5_EXTRA_PRO_HOST="\"http://stage.assessor.idance.vip\""
+
+    H5_EXAM_PRO_HOST="\"http://stage.exam.idance.vip/\""//考牌专属
+
+    APP_PRO_SHARE_HOST="\"https://app.idance.vip\""
+
+
+    //upyun 账号密码
+    API_STAGE_UPYUN_USER="\"stageidance\""
+
+    API_STAGE_UPYUN_PASSWORD="\"AGjqCbGjrJd1l6XB8ZWj1cubxNWuoENL\""
+
+    //网络下载area.json地址
+    DOWNLOAD_AREA_JSON_URL="\"https://asset.idance5.com/test/area.json\""
+
+    //网络下载apk补丁地址
+    DOWNLOAD_APK_PATCH_URL="\"https://asset.idance5.com/apk/patch/\""
+
+    //首页欢迎页面替换图片地址
+    DOWNLOAD_APK_SPLASH_URL="\"http://stage.media.idance.vip/start/advertise.json\""
+
+    //测试环境资源包地址
+    DOWNLOAD_APK_SPLASH_TEST_URL="\"http://stage.media.idance.vip/start/test/advertise.json\""
+
+
+    //预发布域名
+    API_DEV_PRESSURE_HOST="\"http://pre.api.idance.vip\""
+
+    WEBSOCKET_DEV_PRESSURE_URL="\"ws://pre.ws.idance.vip:10001/liveRoomConnection.ws?\""
+
+    WEBSOCKET_DEV_PRESSURE_MEETING_URL="\"ws://pre.ws.idance.vip:10001/meetingRoomConnection.ws?\""
+
+    H5_DEV_PRESSURE_HOST="\"http://pre.h5.idance.vip\""
+
+    H5_EXTRA_DEV_PRESSURE_HOST="\"http://pre.assessor.idance.vip\""
+
+    H5_EXAM_DEV_PRESSURE_HOST="\"http://pre.exam.idance.vip/\""//考牌和入会专属
+
+    APP_PRESSURE_SHARE_HOST="\"https://pre.app.idance.vip\""
+
+
+    //临时测试环境
+    API_DEV_TEMP_HOST="\"http://temp.api.idance.vip\""
+
+    WEBSOCKET_DEV_TEMP_URL="\"ws://temp.ws.idance.vip:10001/liveRoomConnection.ws?\""
+
+    WEBSOCKET_DEV_TEMP_MEETING_URL="\"ws://temp.ws.idance.vip:10001/meetingRoomConnection.ws?\""
+
+    H5_DEV_TEMP_HOST="\"http://temp.h5.idance.vip\""
+
+    H5_EXTRA_DEV_TEMP_HOST="\"http://temp.assessor.idance.vip\""
+
+    H5_EXAM_DEV_TEMP_HOST="\"http://temp.exam.idance.vip/\""//考牌和入会专属
+
+    APP_TEMP_SHARE_HOST="\"https://temp.app.idance.vip\""
+
+
+
+
+
+
+    //额外测试ip地址记录
+    //API
+    //http://121.43.193.251:10040   浩天 http://192.168.101.60:10040   亮亮 http://192.168.101.113:10040  测试 http://test.api.idance.vip
+    //杨坤 http://192.168.100.207:10040  //生产环境 http://stage.api.idance.vip
+
+
+    //H5
+    //    public static final String H5="http://192.168.100.192:8081";
+
+    //webSocket
+    //    public static final String webSocketCommentUrl="ws://192.168.100.204:10032/liveRoomConnection.ws?";
+
+
+}
